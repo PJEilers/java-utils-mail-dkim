@@ -3,17 +3,11 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.github.bbottema</groupId>
-		<artifactId>standard-project-parent</artifactId>
-		<version>1.0.24</version>
-	</parent>
-
 	<groupId>org.simplejavamail</groupId>
 	<artifactId>utils-mail-dkim</artifactId>
 	<packaging>jar</packaging>
 	<name>utils-mail-dkim</name>
-	<version>3.0.0</version>
+	<version>3.0.1-ANGUS</version>
 	<description>A DKIM library for Jakarta Mail</description>
 	<url>https://github.com/simple-java-mail/java-utils-mail-dkim</url>
 	<inceptionYear>2021</inceptionYear>
@@ -74,9 +68,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.sun.mail</groupId>
-			<artifactId>jakarta.mail</artifactId>
-			<version>2.0.1</version>
+			<groupId>org.eclipse.angus</groupId>
+			<artifactId>angus-mail</artifactId>
+			<version>2.0.2</version>
 		</dependency>
 
 		<dependency>
@@ -84,5 +78,13 @@
 			<artifactId>eddsa</artifactId>
 			<version>0.3.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 </project>
